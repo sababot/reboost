@@ -1,0 +1,135 @@
+* {
+	font-family: geneva;
+	margin: 0;
+	-webkit-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    transition: all 250ms linear;
+}
+
+body {
+	background-color: #d8b997;
+}
+
+.wrapper-sections {
+    justify-content: center;
+    
+    padding-top: 2.5vh;
+    padding-bottom: 10vh;
+    display: grid;
+    grid-gap: 50px;
+    background-color: transparent;
+    color: #444;
+    grid-template-rows: repeat(2, 15vw);
+    grid-template-columns: repeat(3, 25vw);
+}
+
+.wrapper-sections a {
+	text-decoration: none;
+    background-color: #edc3a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 1.25vw;
+    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2), 0 0.75vw 2.5vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper-sections a:link {
+	text-decoration: none;
+    background-color: #edc3a1;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 1.25vw;
+    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2), 0 0.75vw 2.5vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper-sections a:hover {
+	text-decoration: none;
+    background-color: #e2b895;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 1.25vw;
+    box-shadow: 0 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 0.375vw 1.25vw 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-title {
+	text-align: center;
+	width: 100%;
+	padding-top: 1.5vh;
+	color: black;
+	font-size: 100%;
+}
+
+.header {
+  background-color: #edc3a1;
+  padding: 4.5vh 0vw;
+  transition: all 0s;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  padding-top: 0vh;
+  text-decoration: none;
+  font-size: 1.25vw;
+  line-height: 0.25vh;
+  border-radius: 1px;
+  transition: all .5s;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 1.75vw;
+  font-weight: bold;
+  color: black;
+  padding-left: 9vw;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  color: #e2b895;
+}
+
+/* Style the active/current link*/
+.header a.active {
+
+  color: white;
+}
+
+.header a.active:hover {
+    color: #edc3a1;
+}
+
+.header .button div {
+  float: left;
+  color: #E76F51;
+  text-align: center;
+  font-size: 1.75vw;
+  padding: 0px;
+  text-decoration: none;
+  font-size: 1vw;
+  line-height: 0.5vh;
+  border-radius: 1px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
