@@ -1,0 +1,83 @@
+:root {
+ 	--square-size: 2vw;
+  	--column-gap: 2.5vw;
+  	--row-gap: 1vw;
+  	--week-width: calc(var(--square-size) + var(--column-gap));
+}
+
+ul {
+	list-style-type: none;
+}
+
+.days {
+	grid-area: days;
+}
+
+.habits {
+	grid-area: habits;
+}
+
+.squares {
+	grid-area: squares;
+}
+
+.graph {
+  	display: inline-grid;
+  	grid-template-areas: "empty days" "habits squares";
+  	grid-template-columns: auto 1fr;
+  	grid-gap: 1vw;
+}
+
+.days {
+  	display: grid;
+  	grid-template-columns: repeat(18, calc(var(--week-width) * 1));
+  	padding-left: 0.35vw;
+}
+
+.habits, .squares {
+  	display: grid;
+  	grid-row-gap: var(--row-gap);
+  	grid-column-gap: var(--column-gap);
+  	grid-template-rows: repeat(7, var(--square-size));
+}
+
+.squares {
+  	grid-auto-flow: column;
+  	grid-auto-columns: var(--square-size);
+  	padding-left: 0vw;
+}
+
+/* Other styling */
+.habits {
+	padding-left: 2.5vw;
+}
+
+.days li {
+	text-align: left;
+	font-size: 0.8vw;
+	writing-mode: vertical-lr;
+	transform: rotateZ(180deg) translateX(3.3vw);
+}
+
+.habits li {
+	font-size: 0.9vw;
+	line-height: 1.75vh;
+	padding-top: 1vh;
+	text-align: right;
+}
+
+.squares button {
+  	background-color: #ebedf0;
+  	border-style: solid;
+  	border-width: 0.2vw;
+  	border-color: #535354;
+  	border-radius: 15%;
+}
+
+.squares button[data_level="1"] {
+  	background-color: white;
+}
+
+.squares button[data_level="2"] {
+  	background-color: lightgreen;
+}

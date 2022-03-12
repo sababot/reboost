@@ -2,8 +2,8 @@
 	font-family: geneva;
 	margin: 0;
 	-webkit-transition: all 250ms linear;
-    -ms-transition: all 250ms linear;
-    transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  transition: all 250ms linear;
 }
 
 body {
@@ -48,39 +48,6 @@ body {
     background-color: #e2b895;
     color: #fff;
     border-radius: 10px;
-    padding: 0px;
-    font-size: 1.25vw;
-    box-shadow: 0 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 0.375vw 1.25vw 0 rgba(0, 0, 0, 0.19);
-}
-
-.wrapper-habits {
-    justify-content: center;
-    
-    padding-top: 2.5vh;
-    padding-bottom: 10vh;
-    display: grid;
-    grid-gap: 5px;
-    background-color: transparent;
-    color: #444;
-    grid-template-rows: repeat(5, 2vw);
-    grid-template-columns: repeat(10, 2vw);
-}
-
-.wrapper-habits a:link {
-  text-decoration: none;
-    background-color: #edc3a1;
-    color: #fff;
-    border-radius: 5px;
-    padding: 0px;
-    font-size: 1.25vw;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2), 0 0.75vw 2.5vw 0 rgba(0, 0, 0, 0.19);
-}
-
-.wrapper-habits a:hover {
-  text-decoration: none;
-    background-color: #e2b895;
-    color: #fff;
-    border-radius: 5px;
     padding: 0px;
     font-size: 1.25vw;
     box-shadow: 0 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 0.375vw 1.25vw 0 rgba(0, 0, 0, 0.19);
@@ -153,16 +120,4 @@ body {
 /* Float the link section to the right */
 .header-right {
   float: right;
-}
-
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
 }
