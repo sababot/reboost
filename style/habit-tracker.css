@@ -3,6 +3,11 @@
   	--column-gap: 2.5vw;
   	--row-gap: 1vw;
   	--week-width: calc(var(--square-size) + var(--column-gap));
+
+  	--square-size-vis: 1vw;
+  	--column-gap-vis: 1.25vw;
+  	--row-gap-vis: 0.25vw;
+  	--week-width-vis: calc(var(--square-size-vis) + var(--column-gap-vis));
 }
 
 ul {
@@ -56,7 +61,7 @@ ul {
 	text-align: left;
 	font-size: 0.8vw;
 	writing-mode: vertical-lr;
-	transform: rotateZ(180deg) translateX(3.3vw);
+	transform: rotateZ(200deg) translateX(2.75vw) translateY(-0.5vw);
 }
 
 .habits li {
@@ -80,4 +85,8 @@ ul {
 
 .squares button[data_level="2"] {
   	background-color: lightgreen;
+}
+
+@media screen and (max-width: 750px) {
+	/**/
 }

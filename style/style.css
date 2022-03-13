@@ -56,9 +56,12 @@ body {
 .box-title {
 	text-align: center;
 	width: 100%;
-	padding-top: 1.5vh;
+	padding-top: 0.75vw;
 	color: black;
 	font-size: 100%;
+  -webkit-transition: font-size 0ms linear;
+  -ms-transition: font-size 0ms linear;
+  transition: font-size 0ms linear;
 }
 
 .header {
@@ -120,4 +123,30 @@ body {
 /* Float the link section to the right */
 .header-right {
   float: right;
+}
+
+.box img {
+  width: 20vw;
+  padding-left: 2.5vw;
+  padding-top: 0.65vw;
+  -webkit-transition: all 0ms linear;
+  -ms-transition: all 0ms linear;
+  transition: all 0ms linear;
+}
+
+@media screen and (max-width: 750px) {
+  .wrapper-sections {
+    grid-template-rows: repeat(3, 21vw);
+    grid-template-columns: repeat(2, 35vw);
+  }
+
+  .box-title {
+    font-size: 150%;
+  }
+
+  .box img {
+    width: 30vw;
+    padding-left: 2.75vw;
+    padding-top: 0.5vw;
+  }
 }
