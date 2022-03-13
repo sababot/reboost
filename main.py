@@ -18,7 +18,7 @@ app.config['MYSQL_DB'] = 'pythonlogin'
 mysql = MySQL(app)
 
 # Login Route
-@app.route('/pythonlogin/', methods=['GET', 'POST'])
+@app.route('/login/', methods=['GET', 'POST'])
 def login():
     # Output message if something goes wrong...
     msg = 'asdfsadf'
@@ -39,14 +39,14 @@ def login():
             session['id'] = account['id']
             session['username'] = account['username']
             # Redirect to home page
-            return render_template('home.html', msg='')
+            return redirect('/')
         else:
             # Account doesnt exist or username/password incorrect
             msg = 'Incorrect username/password!'
 
     return render_template('index.html', msg='')
 
-@app.route('/pythonlogin/logout')
+@app.route('/login/logout')
 def logout():
     # Remove session data, this will log the user out
    session.pop('loggedin', None)
@@ -54,6 +54,14 @@ def logout():
    session.pop('username', None)
    # Redirect to login page
    return redirect(url_for('login'))
+
+@app.route('/')
+def home():
+   return render_template('home.html')
+
+@app.route('/habit-tracker')
+def habit_tracker():
+   return render_template('habit-tracker.html')
 
 if __name__ == '__main__':
   
