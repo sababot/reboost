@@ -17,7 +17,7 @@ app.config['MYSQL_DB'] = 'pythonlogin'
 # Intialize MySQL
 mysql = MySQL(app)
 
-# Login Route
+# Routes
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
     # Output message if something goes wrong...
@@ -63,8 +63,9 @@ def home():
 def habit_tracker():
    return render_template('habit-tracker.html')
 
+@app.route('/gratitude-journal')
+def gratitude_journal():
+   return render_template('gratitude-journal.html')
+
 if __name__ == '__main__':
-  
-    # run() method of Flask class runs the application 
-    # on the local development server.
     app.run()

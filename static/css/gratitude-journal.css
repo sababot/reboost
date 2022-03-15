@@ -1,0 +1,52 @@
+.wrapper-pages {
+    justify-content: center;
+    
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+    display: grid;
+    grid-gap: 0.1vw;
+    background-color: transparent;
+    color: #444;
+    grid-template-rows: repeat(1, 50vw);
+    grid-template-columns: 40vw 1vw 40vw;
+}
+
+.wrapper-pages div {
+	text-decoration: none;
+    background-color: #edc3a1;
+    color: #fff;
+    border-radius: 0vw;
+    padding: 0px;
+    font-size: 1.25vw;
+}
+
+.wrapper-pages .day {
+    margin: 5.5%;
+    width: 35vw;
+    height: 12.75vw;
+    border: solid;
+    border-color: #e5b187;
+    border-width: 0.5vw;
+    border-radius: 1vw;
+}
+
+.wrapper-pages .day div {
+    display: flex;
+}
+
+.wrapper-pages .day input {
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    height: 1.5vw;
+    width: 31.5vw;
+    margin-top: 0.5vw;
+    outline: none;
+    font-size: 1.1vw;
+}
+
+.wrapper-pages .day p {
+    color: black;
+    padding: 0.5vw;
+}
