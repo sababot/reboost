@@ -67,5 +67,9 @@ def habit_tracker():
 def gratitude_journal():
    return render_template('gratitude-journal.html')
 
+@app.route('/time-table')
+def time_table():
+   return render_template('time-table.html')
+
 if __name__ == '__main__':
     app.run()
