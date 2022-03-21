@@ -1,0 +1,99 @@
+:root {
+ 	--square-size: 6vw;
+  	--column-gap: 0.5vw;
+  	--row-gap: 0.1vw;
+  	--week-width: calc(calc(var(--square-size) * 2) + var(--column-gap));
+}
+
+ul {
+	list-style-type: none;
+}
+
+.days {
+	grid-area: days;
+}
+
+.habits {
+	grid-area: habits;
+}
+
+.squares {
+	grid-area: squares;
+}
+
+.graph {
+  	display: inline-grid;
+  	grid-template-areas: "empty days" "habits squares";
+  	grid-template-columns: auto 1fr;
+  	grid-gap: 0vw;
+}
+
+.days {
+  	display: grid;
+  	grid-template-columns: repeat(7, calc(var(--week-width) * 1));
+  	padding-left: 0vw;
+  	margin-left: 0px;
+}
+
+.habits, .squares {
+  	display: grid;
+  	grid-row-gap: calc(var(--row-gap) * 10);
+  	grid-column-gap: var(--column-gap);
+  	grid-template-rows: repeat(5, var(--square-size));
+}
+
+.squares {
+  	grid-auto-flow: column;
+  	grid-auto-columns: calc(var(--square-size) * 10);
+  	padding-left: 0vw;
+}
+
+.habits {
+	grid-auto-columns: calc(var(--square-size) * 2);
+}
+
+/* Other styling */
+.habits {
+	padding-left: 10vw;
+}
+
+.habits div {
+	border-style: solid;
+	border-width: 0.2vw;
+	border-color: #535354;
+	height: 5.6vw;
+	background-color: lightblue;
+}
+
+.days li {
+	padding-left: 0vw;
+	text-align: left;
+	font-size: 1vw;
+}
+
+.habits li {
+	font-size: 1vw;
+	line-height: 1.75vh;
+	padding-top: 2.5vw;
+	text-align: center;
+}
+
+.squares button {
+  	background-color: #ebedf0;
+  	border-style: solid;
+  	border-left: none;
+  	border-width: 0.2vw;
+  	border-color: #535354;
+}
+
+.squares button[data_level="1"] {
+  	background-color: white;
+}
+
+.squares button[data_level="2"] {
+  	background-color: lightgreen;
+}
+
+@media screen and (max-width: 750px) {
+	/**/
+}

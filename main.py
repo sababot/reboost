@@ -126,5 +126,14 @@ def time_table():
     # User is not loggedin redirect to login page
     return redirect(url_for('login'))
 
+@app.route('/to-do')
+def to_do():
+    # Check if user is loggedin
+    if 'loggedin' in session:
+        # User is loggedin show them the home page
+        return render_template('to-do.html', username=session['username'])
+    # User is not loggedin redirect to login page
+    return redirect(url_for('login'))
+
 if __name__ == '__main__':
     app.run()
