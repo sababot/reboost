@@ -1,12 +1,28 @@
 var n = 35;
 var random_colors = ["#edef6e", "#c99f22", "#1a1ddb", "#771adb", "#cc458a0", "#cc4547", "#cc454c", "#101233", "#18ccc3", "#5de275", "#e2855d", "#66615f"];
 
-const squares = document.querySelector('.squares');
-for (var i = 0; i < n; i++) {
-  squares.insertAdjacentHTML('beforeend', 
+function update (){
+  const squares = document.querySelector('.squares');
+  squares.innerHTML = "";
+  for (var i = 0; i < n; i++) {
+    squares.insertAdjacentHTML('beforeend', 
     `<button data_level="1" id="${i}" onclick="interact_box(id)" onchange="interact_box(id)">
     <input type="text" style="border: none; outline: none; color: black; background-color: transparent; width: 80%; text-align: center;" value="Activity">
     </button>`);
+  }
+}
+
+update();
+
+function remove_column (){
+  n -= document.getElementById("habits").childElementCount;
+  document.getElementById("days").removeChild(document.getElementById(document.getElementById("days").childElementCount - 1));
+  update();
+}
+
+function add_column (){
+  n += document.getElementById("habits").childElementCount;
+  update();
 }
 
 function color_code (){

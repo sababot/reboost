@@ -104,7 +104,7 @@ def habit_tracker():
     # Check if user is loggedin
     if 'loggedin' in session:
         # User is loggedin show them the home page
-        return render_template('habit_tracker.html', username=session['username'])
+        return render_template('habit-tracker.html', username=session['username'])
     # User is not loggedin redirect to login page
     return redirect(url_for('login'))
 
@@ -113,7 +113,7 @@ def gratitude_journal():
     # Check if user is loggedin
     if 'loggedin' in session:
         # User is loggedin show them the home page
-        return render_template('gratitude_journal.html', username=session['username'])
+        return render_template('gratitude-journal.html', username=session['username'])
     # User is not loggedin redirect to login page
     return redirect(url_for('login'))
 

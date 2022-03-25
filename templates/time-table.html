@@ -23,17 +23,18 @@
 	<p style="text-align: center; font-size: 2vw; padding-top: 2.5vw; padding-bottom: 4.5vw;">Timetable</p>
 
 	<!--Page-->
-	<div class="graph">
-		<ul class="days">
-			<li>Monday</li>
-		    <li>Tuesday</li>
-		    <li>Wednsday</li>
-		    <li>Thursday</li>
-		    <li>Friday</li>
-		    <li>Saturday</li>
-		    <li>Sunday</li>
+	<div class="graph" id="graph">
+		<ul class="days" id="days">
+			<li id="1">Monday</li>
+		    <li id="2">Tuesday</li>
+		    <li id="3">Wednsday</li>
+		    <li id="4">Thursday</li>
+		    <li id="5">Friday</li>
+		    <li id="6">Saturday</li>
+		    <li id="7">Sunday</li>
+		    <button onclick="remove_column()">Remove Column</button>
     	</ul>
-		<ul class="habits">
+		<ul class="habits" id="habits">
 			<li>10:00</li>
       		<li>12:00</li>
       		<li>14:00</li>
