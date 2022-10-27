@@ -4,8 +4,7 @@
 
 .login, .register {
   	width: 22vw;
-  	background-color: #edc3a1;
-  	box-shadow: 0 0 1vw 0 rgba(0, 0, 0, 0.3);
+  	background-color: transparent;
   	margin: 6vw auto;
 }
 .login h1, .register h1 {
@@ -23,15 +22,15 @@
   	color: black;
   	text-decoration: none;
   	display: inline-flex;
-  	padding: 0 1vw 1vw 1vw;
+  	padding: 0 1vw 0.5vw 1vw;
   	font-weight: bold;
 }
 .login .links a:hover, .register .links a:hover {
   	color: #e2b895;
 }
 .login .links a.active, .register .links a.active {
-  	border-bottom: 0.2vw solid white;
-  	color: white;
+  	border-bottom: 0.15vw solid #757575;
+  	color: #757575;
 }
 .login form, .register form {
   	display: flex;
@@ -45,31 +44,40 @@
   	align-items: center;
   	width: 2.5vw;
   	height: 2.5vw;
-  	background-color: #eab488;
-  	color: #ffffff;
+  	background-color: transparent;
+  	border: solid;
+  	border-color: #f66e0d;
+  	border-width: 0.15vw;
+  	color: #757575;
 }
 .login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
-  	width: 17vw;
+  	width: 16.75vw;
   	height: 2.5vw;
   	border: none;
   	margin-bottom: 1vw;
   	padding: 0 1vw;
   	font-size: 0.75vw;
+  	border: solid;
+  	border-color: #f66e0d;
+  	border-width: 0.15vw;
+  	background-color: transparent;
+  	text-decoration: none;
 }
 .login form input[type="submit"], .register form input[type="submit"] {
   	width: 100%;
   	padding: 1vw;
   	margin-top: 1vw;
-  	background-color: #eab488;
+  	background-color: transparent;
   	border: 0;
   	cursor: pointer;
   	font-weight: bold;
-  	color: #ffffff;
-  	transition: background-color 0.2s;
+  	border: solid;
+  	border-color: #f66e0d;
+  	border-width: 0.15vw;
+  	color: #757575;
 }
 .login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
-  	background-color: #d8b997;
-  	transition: background-color 0.2s;
+  	background-color: transparent;
 }
 .navtop {
   	background-color: #2f3947;

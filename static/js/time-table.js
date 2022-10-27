@@ -22,6 +22,7 @@ function remove_column (){
 
 function add_column (){
   n += document.getElementById("habits").childElementCount;
+  document.getElementById("days").insertAdjacentHTML('beforeend', '<li id="7">Day</li>');
   update();
 }
 

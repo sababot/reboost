@@ -12,7 +12,7 @@ app.secret_key = 'icytorsecret'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'tor1q2w3e4r5t'
-app.config['MYSQL_DB'] = 'pythonlogin'
+app.config['MYSQL_DB'] = 'reboost'
 
 # Intialize MySQL
 mysql = MySQL(app)
