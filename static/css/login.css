@@ -78,6 +78,7 @@
 }
 .login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
   	background-color: transparent;
+  	border-color: white;
 }
 .navtop {
   	background-color: #2f3947;
