@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #313131;
+	background-color: #212121;
 }
 
 .wrapper-sections {
@@ -22,51 +22,46 @@ body {
 
 .wrapper-sections a {
 	text-decoration: none;
-    background-color: #edc3a1;
-    color: #fff;
-    border-radius: 10px;
+    background-color: #303030;
+    color: #a85937;
     padding: 0px;
     font-size: 1.25vw;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2), 0 0.75vw 2.5vw 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper-sections a:link {
 	text-decoration: none;
-    background-color: #edc3a1;
-    color: #fff;
-    border-radius: 10px;
+    background-color: #303030;
+    color: #a85937;
     padding: 0px;
     font-size: 1.25vw;
-    box-shadow: 0 0.5vw 1vw 0 rgba(0, 0, 0, 0.2), 0 0.75vw 2.5vw 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper-sections a:hover {
 	text-decoration: none;
-    background-color: #e2b895;
-    color: #fff;
-    border-radius: 10px;
+    background-color: #3a3a3a;
+    color: #ff9138;
     padding: 0px;
     font-size: 1.25vw;
-    box-shadow: 0 0.25vw 0.5vw 0 rgba(0, 0, 0, 0.2), 0 0.375vw 1.25vw 0 rgba(0, 0, 0, 0.19);
 }
 
 .box-title {
 	text-align: center;
 	width: 100%;
 	padding-top: 0.75vw;
-	color: black;
+	color: inherit;
 	font-size: 100%;
 }
 
 .header {
-  background-color: transparent;
-  padding: 4.5vh 0vw;
+  background-color: #2d2d2d;
+  padding: 2.5vh 0vw;
+  padding-bottom: 3.25vh;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: #f66e0d;
+  color: #ff9138;
   text-align: center;
   padding-left: 1.5vw;
   padding-right: 1.5vw;
@@ -74,14 +69,12 @@ body {
   text-decoration: none;
   font-size: 1.25vw;
   line-height: 0.25vh;
-  border-radius: 1px;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
   font-size: 1.75vw;
-  font-weight: bold;
-  color: #f66e0d;
+  color: #ff9138;
   padding-left: 9vw;
 }
 
@@ -93,7 +86,7 @@ body {
 /* Style the active/current link*/
 .header a.active {
 
-  color: white;
+  color: #ff8049;
 }
 
 .header a.active:hover {
@@ -138,4 +131,12 @@ body {
     padding-left: 2.75vw;
     padding-top: 0.5vw;
   }
+}
+
+.footer {
+    position: fixed;
+    bottom: 1vh;
+    left: 43vw;
+    color: #757575;
+    font-size: 1.5vh;
 }

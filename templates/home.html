@@ -11,46 +11,50 @@
 <body>
 	<!--Header-->
 	<div id="header-element" class="header">
-		<a class="logo" href="">Reboost</a>
+		<a class="logo" href="">reboost</a>
 		<div class="header-right" style="padding-right: 10vw;">
-			<a class="active" href="/">Dashboard</a>
-			<a href="/profile">Profile</a>
-			<a href="/contact">Contact</a>
-			<a href="/login/logout">Logout</a>
+			<a class="active" href="/">dashboard</a>
+			<a href="/profile">profile</a>
+			<a href="/contact">contact</a>
+			<a href="/login/logout">logout</a>
 		</div>
 	</div>
-
-	<!--Title-->
-	<p style="text-align: center; font-size: 2vw; padding-top: 2.5vw; padding-bottom: 4.5vw;">Greetings, {{ username }}</p>
 	
 	<!--Dashboard-->
-	<div class="wrapper-sections">
+	<div class="wrapper-sections" style="margin-top: 10vh;">
   		<a href="/habit-tracker">
   			<div class="box c">
-  				<p class="box-title">Homework</p>
+  				<p class="box-title">grades</p>
   			</div>
   		</a>
   		<a href="/gratitude-journal">
   			<div class="box c">
-  				<p class="box-title">Exams</p>
+  				<p class="box-title">revision</p>
   			</div>
   		</a>
   		<a href="/time-table">
   			<div class="box c">
-  				<p class="box-title">Timetable</p>
+  				<p class="box-title">progress</p>
   			</div>
   		</a>
   		<a href="/to-do">
   			<div class="box c">
-  				<p class="box-title">Journey</p>
+  				<p class="box-title">to-do</p>
   			</div>
   		</a>
-  		<a href="/books">
+  		<a href="/checklist">
   			<div class="box c">
-  				<p class="box-title">Resources</p>
+  				<p class="box-title">checklist</p>
+  			</div>
+  		</a>
+  		<a href="/resources">
+  			<div class="box c">
+  				<p class="box-title">resources</p>
   			</div>
   		</a>
 	</div>
+
+	<p class="footer">© 2022, Aitor Garcia Hombrados</p>
 
 	<!--Scripts-->
 	<script src="js/habits-graph-vis.js"></script>
